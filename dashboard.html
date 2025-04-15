@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dream Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <h1>📜 Your Dream Journal</h1>
+
+    {% if dreams %} {% for dream in dreams %}
+    <div class="dream-entry">
+      <p><strong>🛌 Dream:</strong> {{ dream.text }}</p>
+      <p><strong>💭 Keywords:</strong> {{ dream.keywords | join(', ') }}</p>
+      <p><strong>😊 Emotion:</strong> {{ dream.emotion }}</p>
+      <p><strong>🔮 Interpretation:</strong> {{ dream.interpretation }}</p>
+    </div>
+    {% endfor %} {% else %}
+    <p style="text-align: center">
+      No dreams submitted yet.
+      <a href="{{ url_for('journal') }}">Write one now!</a>
+    </p>
+    {% endif %}
+
+    <div style="text-align: center; margin-top: 30px">
+      <a href="{{ url_for('home') }}">🏠 Back to Home</a>
+      <a href="{{ url_for('journal') }}">📝 Write Another Dream</a>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dream Journal</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <h1>🌙 Welcome to Your Dream Journal</h1>
+
+    <p style="text-align: center; font-size: 1.1rem">
+      Start capturing your dreams and get insightful interpretations powered by
+      AI.
+    </p>
+
+    <div style="text-align: center; margin-top: 40px">
+      <a href="{{ url_for('journal') }}">📝 Write a Dream</a>
+      <a href="{{ url_for('dashboard') }}">📜 View Journal</a>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

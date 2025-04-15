@@ -1,0 +1,90 @@
+/* Base layout */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Headings */
+h1 {
+  color: #444;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Links (e.g., buttons) */
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px auto;
+  background-color: #5a67d8;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  text-align: center;
+}
+
+a:hover {
+  background-color: #434190;
+}
+
+/* Forms */
+form {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Submit button */
+button {
+  background-color: #48bb78;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #38a169;
+}
+
+/* Dream entries on dashboard */
+.dream-entry {
+  max-width: 700px;
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dream-entry p {
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
